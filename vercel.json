@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "mongodb+srv://aryansingh165548_db_user:kleigs15@cluster0.va2am7e.mongodb.net/rezide-linkedin?retryWrites=true&w=majority&appName=Cluster0"
+  }
+}
